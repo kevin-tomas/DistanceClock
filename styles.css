@@ -388,7 +388,19 @@ body {
     top: 30%;
 }
 
+.call-btn,
 .message-popup {
+    font-size: .75rem;
+}
+.call-btn::after {
+    content: "Unavailable";
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: normal;
+    margin-left: 20px;
+    color: #ff000089;
+}
+/* .message-popup {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -402,17 +414,17 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     color: #333;
     text-align: center;
-}
+} */
 
 .call-buttons {
     position: fixed;
-    top: 73px;
+    /* top: 73px;
     right: 50%;
-    transform: translateX(50%);
+    transform: translateX(50%); */
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: -100px;
+    margin-left: 10px;
     z-index: 100001;
 }
 
