@@ -95,13 +95,13 @@ function updateDotColors() {
 
 function updateCallButtonStates() {
     const hour = new Date().getHours();
-    const erinHour = (hour + 6) % 24; // Erin is 6 hours ahead
+    const erinHour = (hour + 6) % 24; 
 
     console.log("Local hour:", hour);
     console.log("Erin's hour:", erinHour);
 
     const isKevinAvailable = hour >= 9 && hour < 22;
-    const isErinAvailable = erinHour >= 7 && erinHour < 18; // Changed to 18 (6 PM)
+    const isErinAvailable = erinHour >= 7 && erinHour < 21; 
     
     console.log("Is Erin available:", isErinAvailable);
 
