@@ -95,15 +95,10 @@ function updateDotColors() {
 
 function updateCallButtonStates() {
     const hour = new Date().getHours();
-    const erinHour = (hour + 6) % 24; 
-
-    console.log("Local hour:", hour);
-    console.log("Erin's hour:", erinHour);
+    const erinHour = (hour + 6) % 24;
 
     const isKevinAvailable = hour >= 9 && hour < 22;
     const isErinAvailable = erinHour >= 7 && erinHour < 21; 
-    
-    console.log("Is Erin available:", isErinAvailable);
 
     const kevinBtn = document.getElementById('call-kevin-btn');
     const erinBtn = document.getElementById('call-erin-btn');
@@ -119,6 +114,9 @@ function updateCallButtonStates() {
     }
 
     requestAnimationFrame(updateCallButtonStates);
+
+    console.log("Is Kevin available:", isKevinAvailable);
+    console.log("Is Erin available:", isErinAvailable);
 }
 
 function showMessage(index = null) {
