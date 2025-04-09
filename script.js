@@ -9,7 +9,7 @@ const messages = [
     "Love You!",
     "Have a Good Day :)",
     "Miss You!",
-    "🌻 🌻 🌻",
+    "🌻 🌻 🌻 ",
     "🌸 🌸 🌸",
     "🌼 🌼 🌼",
     "🌷 🌷 🌷"
@@ -95,10 +95,15 @@ function updateDotColors() {
 
 function updateCallButtonStates() {
     const hour = new Date().getHours();
-    const erinHour = (hour + 6) % 24;
+    const erinHour = (hour + 6) % 24; // Erin is 6 hours ahead
+
+    console.log("Local hour:", hour);
+    console.log("Erin's hour:", erinHour);
 
     const isKevinAvailable = hour >= 9 && hour < 22;
-    const isErinAvailable = erinHour >= 7 && erinHour < 19;
+    const isErinAvailable = erinHour >= 7 && erinHour < 18; // Changed to 18 (6 PM)
+    
+    console.log("Is Erin available:", isErinAvailable);
 
     const kevinBtn = document.getElementById('call-kevin-btn');
     const erinBtn = document.getElementById('call-erin-btn');
