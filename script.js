@@ -9,7 +9,7 @@ const messages = [
     "Love You!",
     "Have a Good Day :)",
     "Miss You!",
-    "🌸 🌼 🌷 🌹 💐 🌻 🌹 🌷 🌼 🌸"
+    "🌸 🌼 🌷 🌹 🌻 🌹 🌷 🌼 🌸"
 ];
 let currentMessagePopup = null;
 let currentMessageIndex = null;
