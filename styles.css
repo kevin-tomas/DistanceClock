@@ -303,6 +303,13 @@ body {
     top: 20%;
 }
 
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
+
 .call-btn::after {
     content: "Unavailable";
     font-family: Helvetica, Arial, sans-serif;
