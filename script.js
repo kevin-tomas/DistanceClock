@@ -105,12 +105,12 @@ function updateCallButtonStates() {
 
     if (kevinBtn) {
         kevinBtn.disabled = !isKevinAvailable;
-        kevinBtn.onclick = isKevinAvailable ? () => window.open("https://wa.me/18015972033", "_blank") : null;
+        kevinBtn.onclick = isKevinAvailable ? () => window.open("https://www.whatsapp.com/", "_blank") : null;
     }
 
     if (erinBtn) {
         erinBtn.disabled = !isErinAvailable;
-        erinBtn.onclick = isErinAvailable ? () => window.open("https://wa.me/18015971665", "_blank") : null;
+        erinBtn.onclick = isErinAvailable ? () => window.open("https://www.whatsapp.com/", "_blank") : null;
     }
 
     requestAnimationFrame(updateCallButtonStates);
